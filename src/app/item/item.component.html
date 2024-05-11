@@ -1,5 +1,5 @@
 <div class="item">
-    <input [id]="item.title" type="checkbox" (change)="item.completed != item.completed" [checked]="item.completed" />
+    <input [id]="item.title" type="checkbox" (change)="item.completed = !item.completed" [checked]="item.completed" />
     <label [for]="item.title"> {{item.title}} </label>
 
     <div class="btn-wrapper" *ngIf="!editable">
